@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+
+
+body {
+	color: #20b5da;
+	background-image: url(gtpattern.png);
+}
+
+.top-bar {
+	height: 60px;
+	width: 100%;
+	background-color: #29106c;
+	background-image: url(geobar.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 2px 3px #a2a2a2;
+}
+
+.top-bar-section ul li {
+	background-color: transparent;
+	float: right;
+	margin-right: 30px;
+}
+
+h1, h2, h3, h4, h5, h6	{
+	font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+	font-size: 7rem;
+	
+}
+
+.main {
+	background-color: transparent;
+}
+
+.list-class a {
+	background-color: transparent;
+}
