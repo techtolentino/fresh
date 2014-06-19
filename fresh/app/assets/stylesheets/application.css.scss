@@ -14,10 +14,11 @@
  *= require_self
  */
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 
-* {
-	outline: 1px dashed #952d44;
-}
+// * {
+// 	outline: 1px dashed #952d44;
+// }
 
 // styles that apply to entire site
 body {
@@ -54,7 +55,7 @@ h1 {
 }
 
 .mid-screen {
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .top-bar {
@@ -75,6 +76,10 @@ h1 {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+}
+
+.bottom-space {
+	margin-bottom: 80px;
 }
 
 .text-center {
@@ -156,21 +161,27 @@ h1 {
 	padding: 15px;
 }
 
-#shirt_button {
-	margin-bottom: 80px;
-}
-
 .rel {
 	position: relative;
 }
 
+.design-a {
+	color: #f76910;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3rem;
+}
+
 .design-block {
-	border: 2px solid blue;
+	border: 2px dashed #2e7486;
+	border-radius: 4px;
 	position: absolute;
 	margin-top: 20%;
 	height: 60%;
-	width: 35%;
+	width: 36%;
 	margin-left: 30%;
+	padding: 15px;
+	overflow: hidden;
+	opacity: 0.6;
 	z-index: 100;
 }
 

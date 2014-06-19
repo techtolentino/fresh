@@ -19,14 +19,6 @@ $(function() {
   $(document).foundation();
 
 		$(function () {
-			$("#fresh_title").hide().fadeIn(3000);
+			$("#fresh").hide().fadeIn(3000);
 		});
-
-	// 	$("#shirt_button").click(function(e){
-	// 		e.preventDefault();
-	// 		$("show_shirt").removeClass(".show");
-	// 		$("show_shirt").addClass(".hidden");
-	// 		$("#hide_shirt").toggleClass(".tshirt");
-	// 		console.log("yes, jQuery button works!");
-	// });
 });
