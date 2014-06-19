@@ -34,6 +34,14 @@ h1 {
 	font-weight: bolder;
 }
 
+.white-text {
+	color: #ffffff;
+}
+
+.blue-text {
+	color: #32a0da;
+}
+
 .text-fill {
 	background-image: url(geo.jpg);
 	-webkit-background-clip: text;
@@ -83,6 +91,7 @@ h1 {
 	border: 1px solid #32a0da;
 	border-radius: 8px;
 	color: #32a0da;
+	margin-top: 20px;
 }
 
 .button:hover {
@@ -90,9 +99,27 @@ h1 {
 	color: #ffffff;
 }
 
+.smaller {
+	width: 150px;
+	padding: 5px;
+	margin: 10px;
+}
+
+// styles that apply to create page
+.tshirt {
+	max-width: 90%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.bg-purple {
+	background-image: url(geobar.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 // styles that apply to home page
 // styles that apply to about page 
-// styles that apply to create page
 
 // media queries for max-width 768
 @media only screen and (max-width : 767px) {
