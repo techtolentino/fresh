@@ -15,18 +15,18 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
 
-// * {
-// 	outline: 1px solid red;
-// }
+* {
+	outline: 1px dashed #952d44;
+}
 
 // styles that apply to entire site
 body {
-	color: #20b5da;
 	background-image: url(gtpattern.png);
 }
 
 h1, h2, h3, h4, h5, h6	{
 	font-family: 'Dosis', sans-serif;
+	color: #414647;
 }
 
 h1 {
@@ -42,16 +42,16 @@ h1 {
 	color: #32a0da;
 }
 
+.light-bar {
+	background-color: #b4dcd7;
+}
+
 .text-fill {
 	background-image: url(geo.jpg);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: rgba(0,0,0,0);
 }
-
-// .border {
-// 	border: 1px solid #5f7573;
-// }
 
 .mid-screen {
 	margin-top: 80px;
@@ -68,22 +68,42 @@ h1 {
 	text-align: center;
 }
 
+.bottom-bar{
+	height: 50px;
+	width: 100%;
+	background-color: #b4dcd7;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
 .text-center {
 	text-align: center;
 }
 
-.list-class ul {
-	list-style-type: none;
+.text-small {
+	font-size: 80%;
+	color: #2f657e;
 }
 
-.list-class li, a{
+.text-right {
+	float: right;
+	margin-right: 30px;
+}
+
+.list-class{
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.list-class li{
 	display: inline-block;
 	margin: 5px 29px 0 20px;
-	color: #ffffff;
 }
 
 .list-class a {
 	background-color: transparent;
+	color: #ffffff;
 }
 
 .list-class a:hover {
@@ -113,18 +133,45 @@ h1 {
 	display: none;
 }
 
+.show {
+	display: block;
+}
+
+.spaced {
+	padding-left: 15px;
+	text-align: left;
+}
+
+.bg-purple {
+	background-color: #69879C;
+	padding: 10px 0;
+}
 // styles that apply to create page
 .tshirt {
 	max-width: 90%;
 	height: auto;
+	margin: 0 auto;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	padding: 15px;
 }
 
-.bg-purple {
-	background-image: url(geobar.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+#shirt_button {
+	margin-bottom: 80px;
+}
+
+.rel {
+	position: relative;
+}
+
+.design-block {
+	border: 2px solid blue;
+	position: absolute;
+	margin-top: 20%;
+	height: 60%;
+	width: 35%;
+	margin-left: 30%;
+	z-index: 100;
 }
 
 select {
@@ -141,7 +188,7 @@ select:hover {
 
 // media queries for max-width 768
 @media only screen and (max-width : 767px) {
-	.list-class li, a {
+	.list-class li {
 		margin: 5px 10px 0 10px;
 		text-align: center;
 	}
