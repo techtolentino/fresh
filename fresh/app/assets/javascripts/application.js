@@ -17,4 +17,13 @@
 //= require_tree .
 $(function() {
   $(document).foundation();
+
+	$("#shirt_button").click(function(e){
+		// e.preventDefault();
+		$("hidden").addClass("tshirt");
+		console.log("yes, jQuery button works!");
+	});
+
 });
+
+

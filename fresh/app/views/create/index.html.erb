@@ -1,14 +1,16 @@
 <div class="row">
 	<div class="large-12 mid-screen columns text-center">
-		<div class="large-6 columns text-center">
+		<div class="large-6 columns text-center border">
 			<h4 class="bg-purple white-text">PREVIEW</h4>
-			<div class="large-12 columns ">
-				<%= image_tag "t-white.png", :class => "tshirt" %>
+			<div class="large-12 columns">
+				<img class="tshirt" id="shirt_color" src="t-white.png">
+				<img class="hidden" id="egg_shirt" src="t-black.png">
 			</div>
 		</div>
-		<div class="large-6 columns text-center">
+		<div class="large-6 columns text-center border">
 			<h4 class="bg-purple white-text">SWAG OUT</h4>
 			<div class="large-12 columns">
+				<br>
 				<br>
 				<label><h5>Symbolize</h5>
 	        <select>
@@ -24,9 +26,11 @@
 	        <select>
 	          <option value="Undefined Method">Undefined Method</option>
 						<option value="!false">true</option>
-						<option value="unexpected token">option3</option>
+						<option value="unexpected token">unexpected token</option>
 						<option value="def initialize">.new</option>
 						<option value="git -force">Git Force</option>
+						<option value="rake">RAKE UP</option>
+						<option value="rspec">RSpec My Shit</option>
 	        </select>
       	</label>
       	<label><h5>Colorize</h5>
@@ -40,8 +44,10 @@
 						<option value="#f39c12">Orange</option>
 	        </select>
       	</label>
-				<a href="#" class="button smaller">CREATE THAT</a>
-				<a href="#" class="button smaller">SHIRT COLOR</a>
+				<br>
+				<a href="#" class="button smaller" id="create_button">CREATE THAT</a>
+				<br>
+				<a href="#" class="button smaller" id="shirt_button">SHIRT COLOR</a>
 			</div>
 		</div>
 	</div>

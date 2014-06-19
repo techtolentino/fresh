@@ -15,9 +15,9 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
 
-*{
-	outline: 1px solid red;
-}
+// * {
+// 	outline: 1px solid red;
+// }
 
 // styles that apply to entire site
 body {
@@ -47,6 +47,11 @@ h1 {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: rgba(0,0,0,0);
+}
+
+.border {
+	border-top: 1px solid #5f7573;
+	border-left: 1px solid #5f7573;
 }
 
 .mid-screen {
@@ -105,11 +110,16 @@ h1 {
 	margin: 10px;
 }
 
+.hidden {
+	display: none;
+}
+
 // styles that apply to create page
 .tshirt {
 	max-width: 90%;
 	height: auto;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .bg-purple {
@@ -117,6 +127,15 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+select {
+	background-color: #b4dcd7;
+}
+
+select:hover {
+	background-color: #90deca;
+}
+
 
 // styles that apply to home page
 // styles that apply to about page 
