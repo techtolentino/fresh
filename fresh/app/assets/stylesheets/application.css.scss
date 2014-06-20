@@ -14,7 +14,8 @@
  *= require_self
  */
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
-@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+// @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Codystar|Racing+Sans+One&subset=latin,latin-ext);
 
 // * {
 // 	outline: 1px dashed #952d44;
@@ -76,6 +77,7 @@ h1 {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	z-index: 500;
 }
 
 .bottom-space {
@@ -166,13 +168,23 @@ h1 {
 }
 
 .design-a {
-	color: #f76910;
-	font-family: 'Permanent Marker', cursive;
-	font-size: 3rem;
+	color: #f72a6d;
+	font-family: 'Codystar', cursive;
+	font-size: 6rem;
+	line-height: 90%;
+}
+
+.design-b {
+	color: #4dc8e7;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 90px;
+	line-height: 70%;
+	word-wrap: break-word;
+	z-index: 20;
 }
 
 .design-block {
-	border: 2px dashed #2e7486;
+	// border: 2px dashed #2e7486;
 	border-radius: 4px;
 	position: absolute;
 	margin-top: 20%;

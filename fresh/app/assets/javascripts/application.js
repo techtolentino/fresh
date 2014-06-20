@@ -16,9 +16,28 @@
 //= require foundation
 //= require_tree .
 $(function() {
+  
   $(document).foundation();
 
 		$(function () {
 			$("#fresh").hide().fadeIn(3000);
 		});
+
+		// $("select").change(function(){
+  //       $(".design-a").text($(this).val());
+  //   });
+	$("#create_button").click(function(e){
+		var code = $("#code").val();
+		var phrase = $("#phrase").val();
+		var color = $("#color").val();
+		e.preventDefault();
+		console.log(code);
+		$(".design-a").text(code);
+		$(".design-b").text(phrase);
+		$(phrase).css("color", color);
+		// $(".design-b").text(phrase);
+	});
+
 });
+
+

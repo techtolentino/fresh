@@ -8,9 +8,13 @@
 				
 				<!-- design layer A -->
 				<div class="large-12 columns design-block">
-					<h2 class="design-a">{you: my_heart}</h2>
+					<h2 class="design-a"></h2>
 				</div>
 
+				<!-- design layer A -->
+				<div class="large-12 columns design-block">
+					<h1 class="design-b"></h2>
+				</div>
 				
 
 					<img class="tshirt" id="show_shirt" src="t-white.png">
@@ -23,9 +27,9 @@
 				<br>
 				<br>
 				<label><h5>addCodeSymbol( );</h5>
-	        <select>
-	          <option value="{ }">Hash</option>
-						<option value="<%  %>">View</option>
+	        <select id="code">
+	          <option value="{  }">Hash</option>
+						<option value="<= =>">Equality</option>
 						<option value="[ ]">Array</option>
 						<option value="=>">Hash Rocket</option>
 						<option value="< />">Tag</option>
@@ -33,7 +37,7 @@
 	        </select>
       	</label>
       	<label><h5>addPhrase( );</h5>
-	        <select>
+	        <select id="phrase">
 	          <option value="Undefined Method">Undefined Method</option>
 						<option value="!false">true</option>
 						<option value="unexpected token">unexpected token</option>
@@ -43,8 +47,8 @@
 						<option value="rspec">RSpec My Shit</option>
 	        </select>
       	</label>
-      	<label><h5>addColor( );</h5>
-	        <select>
+      	<label><h5>textColor( );</h5>
+	        <select id="color">
 		        <option value="#1abc9c">Turquoise</option>
 						<option value="#27ae60">Nephritis</option>
 						<option value="#9b59b6">Amethyst</option>
@@ -57,7 +61,7 @@
 				<br>
 				<a href="#" class="button smaller" id="create_button">CREATE THAT</a>
 				<br>
-				<a href="#" class="button smaller">SHIRT COLOR</a>
+				<!-- <a href="#" class="button smaller">SHIRT COLOR</a> -->
 			</div>
 		</div>
 	</div>
