@@ -25,7 +25,6 @@ $(function() {
 	});
 
 	$("#create_button").click(function(e){
-		e.preventDefault();
 		var code = $("#code").val();
 		var phrase = $("#phrase").val();
 		var color = $("#color").val();
@@ -33,7 +32,8 @@ $(function() {
 		console.log(code);
 		$(".design-a").text(code);
 		$(".design-b").text(phrase);
-		$(".design-b").css("color": color);
+		$(".design-b").css("color", color);
+		e.preventDefault();
 	});
 
 });
