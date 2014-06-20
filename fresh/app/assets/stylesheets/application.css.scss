@@ -14,7 +14,6 @@
  *= require_self
  */
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
-// @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(http://fonts.googleapis.com/css?family=Codystar|Racing+Sans+One&subset=latin,latin-ext);
 
 // * {
@@ -171,14 +170,18 @@ h1 {
 	color: #f72a6d;
 	font-family: 'Codystar', cursive;
 	font-size: 6rem;
+	margin-top: 30px;
+	font-weight: bolder;
 	line-height: 90%;
+	z-index: 40;
 }
 
 .design-b {
 	color: #4dc8e7;
 	font-family: 'Racing Sans One', cursive;
-	font-size: 90px;
+	font-size: 65px;
 	line-height: 70%;
+	letter-spacing: -6px;
 	word-wrap: break-word;
 	z-index: 20;
 }
@@ -208,6 +211,17 @@ select:hover {
 
 // styles that apply to home page
 // styles that apply to about page 
+@media (max-width : 1024px) and (min-width : 767px) {
+	.design-a {
+		font-size: 11rem;
+		font-weight: bolder;
+	}
+
+	.design-b {
+		font-size: 170px;
+	}
+}
+
 
 // media queries for max-width 768
 @media only screen and (max-width : 767px) {
@@ -217,7 +231,11 @@ select:hover {
 	}
 	h1 {
 		font-size: 9rem;
-	}	
+	}
+
+	.design-b {
+		font-size: 130px;
+	}
 }
 // media queries for max-width 480
 @media only screen and (max-width : 480px) {
@@ -228,4 +246,7 @@ select:hover {
 	h1 {
 		font-size: 6rem;
 	}	
+	.design-b {
+		font-size: 48px;
+	}
 }
