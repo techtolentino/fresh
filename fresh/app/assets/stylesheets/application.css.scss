@@ -41,7 +41,7 @@ h1 {
 }
 
 .blue-text {
-	color: #32a0da;
+	color: #3e89c0;
 }
 
 .light-bar {
@@ -62,9 +62,10 @@ h1 {
 .top-bar {
 	height: 60px;
 	width: 100%;
-	background-image: url(geobar.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	// background-image: url(geobar.png);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	background-color: #2f8796;
 	box-shadow: 0 2px 3px #a2a2a2;
 	text-align: center;
 }
@@ -149,8 +150,10 @@ h1 {
 }
 
 .bg-purple {
-	background-color: #69879C;
+	background-color: transparent;
 	padding: 10px 0;
+	border: 1px solid #69879C;
+	border-radius: 4px;
 }
 // styles that apply to create page
 .tshirt {
@@ -260,6 +263,10 @@ select {
 	}
 	h1 {
 		font-size: 9rem;
+	}
+
+	.design-a {
+		font-size: 70px;
 	}
 
 	.design-b {
