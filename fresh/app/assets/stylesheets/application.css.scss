@@ -62,7 +62,7 @@ h1 {
 .top-bar {
 	height: 60px;
 	width: 100%;
-	background-image: url(orangebg.jpg);
+	background-image: url(geobar.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 2px 3px #a2a2a2;
@@ -170,10 +170,10 @@ h1 {
 	color: #f72a6d;
 	font-family: 'Codystar', cursive;
 	font-size: 6rem;
-	margin-top: 30px;
+	margin-top: 4px;
 	font-weight: bolder;
 	line-height: 90%;
-	z-index: 30;
+	z-index: 20;
 }
 
 .design-b {
@@ -183,7 +183,7 @@ h1 {
 	line-height: 70%;
 	letter-spacing: -6px;
 	word-wrap: break-word;
-	opacity: 0.7;
+	opacity: 0.5;
 	z-index: 40;
 }
 
@@ -211,14 +211,33 @@ h1 {
 	z-index: 100;
 }
 
-select {
+#symbol, #color_symbol {
 	background-color: #b4dcd7;
 }
 
-select:hover {
+#symbol:hover, #color_symbol:hover {
 	background-color: #90deca;
 }
 
+#shirt_color {
+	background-color: #bbe99f;
+}
+
+#shirt_color:hover {
+	background-color: #b0dc95;
+}
+
+#phrase, #color_phrase {
+	background-color: #a4c6e9;
+}
+
+#phrase:hover, #color_phrase:hover {
+	background-color: #95b4d2;
+}
+
+select {
+	margin-bottom: 5px;
+}
 
 // styles that apply to home page
 // styles that apply to about page 
@@ -232,7 +251,6 @@ select:hover {
 		font-size: 170px;
 	}
 }
-
 
 // media queries for max-width 768
 @media only screen and (max-width : 767px) {

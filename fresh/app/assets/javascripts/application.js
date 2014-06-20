@@ -25,14 +25,18 @@ $(function() {
 	});
 
 	$("#create_button").click(function(e){
-		var code = $("#code").val();
+		var code = $("#symbol").val();
 		var phrase = $("#phrase").val();
-		var color = $("#color").val();
+		var color_symbol = $("#color_symbol").val();
+		var color_phrase = $("#color_phrase").val();
+		var shirt_color = $("#shirt_color").val();
 
 		console.log(code);
 		$(".design-a").text(code);
+		$(".design-a").css("color", color_symbol);
 		$(".design-b").text(phrase);
-		$(".design-b").css("color", color);
+		$(".design-b").css("color", color_phrase);
+		$(".tshirt").attr("src", shirt_color);
 		e.preventDefault();
 	});
 
