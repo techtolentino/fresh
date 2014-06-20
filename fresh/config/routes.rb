@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/about', to: 'about#index'
   get '/create', to: 'create#index'
   get '/contact', to: 'contact#index'
+  get '/techstack', to: 'techstack#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
