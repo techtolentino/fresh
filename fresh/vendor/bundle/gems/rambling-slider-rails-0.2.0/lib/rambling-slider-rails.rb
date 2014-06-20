@@ -1,0 +1,1 @@
+require 'rambling/slider/rails'

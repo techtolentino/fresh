@@ -19,23 +19,21 @@ $(function() {
   
   $(document).foundation();
 
-		$(function () {
-			$("#fresh").hide().fadeIn(3000);
-		});
 
-		// $("select").change(function(){
-  //       $(".design-a").text($(this).val());
-  //   });
+	$(function () {
+		$("#fresh").hide().fadeIn(3000);
+	});
+
 	$("#create_button").click(function(e){
+		e.preventDefault();
 		var code = $("#code").val();
 		var phrase = $("#phrase").val();
 		var color = $("#color").val();
-		e.preventDefault();
+
 		console.log(code);
 		$(".design-a").text(code);
 		$(".design-b").text(phrase);
-		$(phrase).css("color", color);
-		// $(".design-b").text(phrase);
+		$(".design-b").css("color": color);
 	});
 
 });

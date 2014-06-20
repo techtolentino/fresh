@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
 @import url(http://fonts.googleapis.com/css?family=Codystar|Racing+Sans+One&subset=latin,latin-ext);
 
@@ -48,7 +49,7 @@ h1 {
 }
 
 .text-fill {
-	background-image: url(geo.jpg);
+	background-image: url(tealbg.jpg);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: rgba(0,0,0,0);
@@ -62,7 +63,7 @@ h1 {
 	height: 60px;
 	width: 100%;
 	background-color: #29106c;
-	background-image: url(geobar.png);
+	background-image: url(orangebg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 2px 3px #a2a2a2;
@@ -173,7 +174,7 @@ h1 {
 	margin-top: 30px;
 	font-weight: bolder;
 	line-height: 90%;
-	z-index: 40;
+	z-index: 30;
 }
 
 .design-b {
@@ -183,7 +184,19 @@ h1 {
 	line-height: 70%;
 	letter-spacing: -6px;
 	word-wrap: break-word;
-	z-index: 20;
+	opacity: 0.7;
+	z-index: 40;
+}
+
+.design-c {
+	color: #6e63da;
+	font-family: 'Codystar', sans-serif;
+	font-size: 165px;
+	line-height: 80%;
+	letter-spacing: 6px;
+	word-wrap: break-word;
+	opacity: 0.3;
+	z-index: 50;
 }
 
 .design-block {
@@ -196,7 +209,6 @@ h1 {
 	margin-left: 30%;
 	padding: 15px;
 	overflow: hidden;
-	opacity: 0.6;
 	z-index: 100;
 }
 
