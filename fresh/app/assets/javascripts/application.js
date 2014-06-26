@@ -12,9 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require foundation
-//= require_tree .
+
 $(function() {
   
   $(document).foundation();
@@ -24,7 +23,7 @@ $(function() {
 		$("#fresh").hide().fadeIn(3000);
 	});
 
-	$("#create_button").click(function(e){
+	$("#create_button").on('click', function(e){
 		var code = $("#symbol").val();
 		var phrase = $("#phrase").val();
 		var color_symbol = $("#color_symbol").val();
@@ -41,5 +40,8 @@ $(function() {
 	});
 
 });
+
+// css animation - opacity - 
+// gulp and or grunt
 
 

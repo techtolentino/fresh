@@ -7,7 +7,6 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag 'vendor/modernizr' %>
-    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
     
   </head>
@@ -32,6 +31,6 @@
         <span class="text-right"><a href="https://www.twitter.com/techtolentino">@techtolentino</a></span>
       </p>
     </div>
-
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>
