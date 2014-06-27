@@ -43,5 +43,8 @@ $(function() {
 
 // css animation - opacity - 
 // gulp and or grunt
-
+// event listener on-change to have shirt change when user selects different options
+// 1 post shirt designs
+// 2 creating profiles with the app
+// create a fork option for users to play around with their creation
 
