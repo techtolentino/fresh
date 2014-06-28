@@ -1,0 +1,304 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+@import url(http://fonts.googleapis.com/css?family=Codystar|Racing+Sans+One&subset=latin,latin-ext);
+
+// * {
+// 	outline: 1px dashed #952d44;
+// }
+
+// styles that apply to entire site
+body {
+	background-image: url(gtpattern.png);
+}
+
+h1, h2, h3, h4, h5, h6	{
+	font-family: 'Dosis', sans-serif;
+	color: #414647;
+}
+
+h1 {
+	font-size: 11rem;
+	font-weight: bolder;
+}
+
+.white-text {
+	color: #ffffff;
+}
+
+.blue-text {
+	color: #3e89c0;
+}
+
+.light-bar {
+	background-color: #b4dcd7;
+}
+
+.text-fill {
+	background-image: url(tealbg.jpg);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: rgba(0,0,0,0);
+}
+
+.mid-screen {
+	margin-top: 40px;
+}
+
+.top-bar {
+	height: 60px;
+	width: 100%;
+	// background-image: url(geobar.png);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	background-color: #2f8796;
+	box-shadow: 0 2px 3px #a2a2a2;
+	text-align: center;
+}
+
+.bottom-bar{
+	height: 50px;
+	width: 100%;
+	background-color: #b4dcd7;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 500;
+}
+
+.bottom-space {
+	margin-bottom: 80px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-small {
+	font-size: 80%;
+	color: #2f657e;
+}
+
+.text-right {
+	float: right;
+	margin-right: 30px;
+}
+
+.list-class{
+	list-style-type: none;
+	margin-top: 8px;
+}
+
+.list-class li{
+	display: inline-block;
+	margin: 5px 29px 0 20px;
+}
+
+.list-class a {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.list-class a:hover {
+	color: #f8f5e3;
+}
+
+.button {
+	background-color: transparent;
+	border: 1px solid #32a0da;
+	border-radius: 8px;
+	color: #32a0da;
+	margin-top: 20px;
+}
+
+.button:hover {
+	background-color: #32a0da;
+	color: #ffffff;
+}
+
+.smaller {
+	width: 150px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.spaced {
+	padding-left: 15px;
+	text-align: left;
+}
+
+.bg-purple {
+	background-color: transparent;
+	padding: 10px 0;
+	border: 1px solid #69879C;
+	border-radius: 4px;
+}
+// styles that apply to create page
+.tshirt {
+	max-width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.rel {
+	position: relative;
+}
+
+.design-a {
+	color: #f72a6d;
+	font-family: 'Codystar', cursive;
+	font-size: 6rem;
+	margin-top: 4px;
+	font-weight: bolder;
+	line-height: 90%;
+	z-index: 20;
+}
+
+.design-b {
+	color: #4dc8e7;
+	font-family: 'Racing Sans One', cursive;
+	font-size: 65px;
+	line-height: 70%;
+	letter-spacing: -6px;
+	word-wrap: break-word;
+	opacity: 0.5;
+	z-index: 40;
+}
+
+.design-c {
+	color: #6e63da;
+	font-family: 'Codystar', sans-serif;
+	font-size: 165px;
+	line-height: 80%;
+	letter-spacing: 6px;
+	word-wrap: break-word;
+	opacity: 0.3;
+	z-index: 50;
+}
+
+.design-block {
+	// border: 2px dashed #2e7486;
+	border-radius: 4px;
+	position: absolute;
+	margin-top: 20%;
+	height: 60%;
+	width: 36%;
+	margin-left: 30%;
+	padding: 15px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+#symbol, #color_symbol {
+	background-color: #b4dcd7;
+}
+
+#symbol:hover, #color_symbol:hover {
+	background-color: #90deca;
+}
+
+#shirt_color {
+	background-color: #bbe99f;
+}
+
+#shirt_color:hover {
+	background-color: #b0dc95;
+}
+
+#phrase, #color_phrase {
+	background-color: #a4c6e9;
+}
+
+#phrase:hover, #color_phrase:hover {
+	background-color: #95b4d2;
+}
+
+select {
+	margin-bottom: 5px;
+}
+
+// styles that apply to home page
+// styles that apply to about page 
+@media (max-width : 1024px) and (min-width : 767px) {
+	.design-a {
+		font-size: 11rem;
+		font-weight: bolder;
+	}
+
+	.design-b {
+		font-size: 170px;
+	}
+}
+
+// media queries for max-width 768
+@media only screen and (max-width : 767px) {
+	.list-class li {
+		margin: 5px 10px 0 10px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 9rem;
+	}
+
+	.design-a {
+		font-size: 70px;
+	}
+
+	.design-b {
+		font-size: 130px;
+	}
+}
+// media queries for max-width 480
+@media only screen and (max-width : 480px) {
+	.list-class li, a {
+		margin: 5px 5px 0 5px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 6rem;
+	}	
+	.design-b {
+		font-size: 48px;
+	}
+}
+
+
+.title {
+	color: blue;
+	div {
+		color: red;
+	}
+}
+
+.title {
+	color: blue;
+}
+
+.title div {
+	color
+}
