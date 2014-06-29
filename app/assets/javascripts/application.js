@@ -36,6 +36,8 @@ $(function() {
 		$(".design-b").text(phrase);
 		$(".design-b").css("color", color_phrase);
 		$(".tshirt").attr("src", shirt_color);
+		$('html, body').animate({scrollTop:0}, 'slow');
+
 		e.preventDefault();
 	});
 
