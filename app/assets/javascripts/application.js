@@ -31,11 +31,11 @@ $(function() {
 		var shirt_color = $("#shirt_color").val();
 
 		console.log(code);
-		$(".design-a").text(code);
-		$(".design-a").css("color", color_symbol);
-		$(".design-b").text(phrase);
-		$(".design-b").css("color", color_phrase);
-		$(".tshirt").attr("src", shirt_color);
+		$(".design-a").text(code).fadeIn('slow');
+		$(".design-a").css("color", color_symbol).fadeIn('slow');
+		$(".design-b").text(phrase).fadeIn('slow');
+		$(".design-b").css("color", color_phrase).fadeIn('slow');
+		$(".tshirt").attr("src", shirt_color).fadeIn('slow');
 		$('html, body').animate({scrollTop:0}, 'slow');
 
 		e.preventDefault();
