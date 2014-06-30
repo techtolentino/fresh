@@ -23,17 +23,17 @@ $(function() {
 		$("#fresh").hide().fadeIn(3000);
 	});
 
+
+	$("#create_button").on('click', function(e){
 		var code = $("#symbol").val();
 		var phrase = $("#phrase").val();
 		var color_symbol = $("#color_symbol").val();
 		var color_phrase = $("#color_phrase").val();
 		var shirt_color = $("#shirt_color").val();
-
-	$("#create_button").on('click', function(e){
 		console.log(code);
-		$(".design-a").text(code);
+		$(".design-a").text(code).hide().fadeIn(1000);
 		$(".design-a").css("color", color_symbol);
-		$(".design-b").text(phrase);
+		$(".design-b").text(phrase).hide().fadeIn(1000);
 		$(".design-b").css("color", color_phrase);
 		$(".tshirt").attr("src", shirt_color);
 		$('html, body').animate({scrollTop:0}, 'slow');
