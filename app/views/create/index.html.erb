@@ -4,30 +4,32 @@
 	<div class="large-12 mid-screen columns text-center bottom-space">
 		<div class="large-6 columns text-center">
 			<h4 class="bg-purple blue-text">PREVIEW</h4>
-			<div class="large-12 columns rel">
+			<div class="large-12 columns rel" id="creation">
 				
-				<!-- design layer A -->
-				<div class="large-12 columns design-block">
-					<h2 class="design-a"></h2>
-				</div>
+			<!-- design layer A -->
+			<div class="large-12 columns design-block">
+				<h2 class="design-a"></h2>
+			</div>
 
-				<!-- design layer B -->
-				<div class="large-12 columns design-block">
-					<h1 class="design-b"></h2>
-				</div>
+			<!-- design layer B -->
+			<div class="large-12 columns design-block">
+				<h1 class="design-b"></h2>
+			</div>
 
-					<!-- design layer C -->
-				<div class="large-12 columns design-block">
-					<h1 class="design-c"></h2>
-				</div>
+				<!-- design layer C -->
+			<div class="large-12 columns design-block">
+				<h1 class="design-c"></h2>
+			</div>
 				
 					<img class="tshirt" id="show_shirt" src="t-white.png">
 			</div>
 		</div>
+
+		
 		<div class="large-6 columns text-center">
 			<h4 class="bg-purple blue-text">STYLE IT</h4>
 			<div class="large-12 columns">
-        <select id="shirt_color" >
+        <select class="selection-field" id="shirt_color" >
 					<option value="t-white.png">1) Choose Shirt Color</option>
 					<option value="t-white.png">White</option>
 					<option value="t-black.png">Black</option>
@@ -35,8 +37,8 @@
 					<option value="t-red.png">Red</option>
 					<option value="t-seafoam.png">Seafoam</option>
         </select>
-        <select id="symbol">
-					<option value="">2) Add a Code Symbol</option>
+        <select class="selection-field" id="symbol">
+					<option value="</>">2) Add a Code Symbol</option>
 					<option value="< />">Tag</option>
           <option value="{  }">Hash</option>
 					<option value="<= =>">Equality</option>
@@ -44,7 +46,7 @@
 					<option value="=>">Hash Rocket</option>
 					<option value="&&">And Operator</option>
         </select>
-        <select id="color_symbol" >
+        <select class="selection-field" id="color_symbol" >
 					<option value="">3) Colorize Code Symbol</option>
 	        <option value="#f82576">Pink</option>
 					<option value="#9b59b6">Purps</option>
@@ -54,10 +56,10 @@
 					<option value="#27ae60">Kelly</option>
 					<option value="#e74c3c">Salmon</option>
         </select>
-        <select id="phrase">
+        <select class="selection-field" id="phrase">
 					<option value="">4) Add a Phrase</option>
 					<option value="CODE LIFE">Code Life</option>
-					<option value="RSPEC MY SHIT">RSpec Yourself</option>
+					<option value="RSPEC YO SELF">RSpec Yourself</option>
           <option value="UNDEFINED METHOD">Undefined Method</option>
 					<option value="!FALSE">true</option>
 					<option value="UNEXPECTED TOKEN">unexpected token</option>
@@ -65,7 +67,7 @@
 					<option value="GIT -FORCE">Git Force</option>
 					<option value="RAKE UP!">RAKE UP</option>
         </select>
-        <select id="color_phrase" >
+        <select class="selection-field" id="color_phrase" >
 					<option value="">5) Colorize Phrase</option>
 					<option value="#7f8c8d">Concrete</option>
 	        <option value="#39c0da">Turquoise</option>
