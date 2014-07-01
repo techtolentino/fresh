@@ -59,15 +59,10 @@ $(function() {
 
 });
 
-   var c = 0;
-   var cloned;
-
+	var newIdCount = 1;
 	$("#create_button").on('click', function(e){
-		$("#creation").clone().appendTo("#gallery");
-
-		cloned = $( '#id'+ c );
-    $("#creation"+c).clone().attr('id', 'id'+(++c) ).insertAfter( cloned );
-
+		$(".creation").clone().attr('id', 'id'+ newIdCount++).appendTo("#gallery");
 		console.log('this designed was cloned');
 		e.preventDefault();
 	});
+
