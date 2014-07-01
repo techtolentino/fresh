@@ -23,29 +23,41 @@ $(function() {
 		$("#fresh").hide().fadeIn(2000);
 	});
 
-
-	$(".selection-field").change(function(e){
-		var code = $("#symbol").val();
-		var phrase = $("#phrase").val();
-		var color_symbol = $("#color_symbol").val();
-		var color_phrase = $("#color_phrase").val();
+	$("#shirt_color").change(function(){
 		var shirt_color = $("#shirt_color").val();
-		console.log(code);
-		$(".design-a").text(code);
-		$(".design-a").css("color", color_symbol);
-		$(".design-b").text(phrase);
-		$(".design-b").css("color", color_phrase);
 		$(".tshirt").attr("src", shirt_color);
-		$('html, body').animate({scrollTop:0}, 'slow');
-		e.preventDefault();
+	});
+	
+	$("#symbol").change(function(){
+		var code = $("#symbol").val();
+		$(".design-a").text(code);
+	});
+	
+	$("#color_symbol").change(function(){
+		var color_symbol = $("#color_symbol").val();
+		$(".design-a").css("color", color_symbol);
 	});
 
+	$("#phrase").change(function(){
+		var phrase = $("#phrase").val();
+		$(".design-b").text(phrase);
+	});
+	
+	$("#color_phrase").change(function(){
+		var color_phrase = $("#color_phrase").val();
+		$(".design-b").css("color", color_phrase);
+		$('html, body').animate({scrollTop:0}, 'slow');
+	});
+	// 	console.log(code);
+	// 	e.preventDefault();
+
+	$("#create_button").on('click', function(e){
+		$("#creation").clone().appendTo("#gallery");
+		console.log('this designed was cloned');
+		e.preventDefault();
+	});
 });
 
-// css animation - opacity - 
-// gulp and or grunt
-// event listener on-change to have shirt change when user selects different options
-// 1 post shirt designs
-// 2 creating profiles with the app
-// create a fork option for users to play around with their creation
 
+// on save - modal user signin
+// .clone().appendTo('#gallery')
