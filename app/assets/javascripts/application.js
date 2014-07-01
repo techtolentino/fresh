@@ -59,6 +59,7 @@ $(function() {
 
 });
 
+
 	var newIdCount = 1;
 	$("#create_button").on('click', function(e){
 		$(".creation").clone().attr('id', 'id'+ newIdCount++).appendTo("#gallery");
