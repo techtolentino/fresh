@@ -51,13 +51,23 @@ $(function() {
 	// 	console.log(code);
 	// 	e.preventDefault();
 
+	// $("#create_button").on('click', function(e){
+	// 	$("#creation").load("gallery #gallery");
+	// 	console.log('this designed was cloned');
+	// 	e.preventDefault();
+	// });
+
+});
+
+   var c = 0;
+   var cloned;
+
 	$("#create_button").on('click', function(e){
 		$("#creation").clone().appendTo("#gallery");
+
+		cloned = $( '#id'+ c );
+    $("#creation"+c).clone().attr('id', 'id'+(++c) ).insertAfter( cloned );
+
 		console.log('this designed was cloned');
 		e.preventDefault();
 	});
-});
-
-
-// on save - modal user signin
-// .clone().appendTo('#gallery')
