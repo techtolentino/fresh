@@ -67,14 +67,14 @@ $(function() {
 
 	var activeShirt = {
 		shirtColor: 'white',
-		symbol: '{  }',
+		symbol: '</>',
 		symbolColor: 'f82576',
 		phrase: '!FALSE',
 		phraseColor: 'f82576'
 	};
 
 	var renderShirt = function (targetEl, shirt) {
-		$(".tshirt", targetEl).attr("src", "t-" + shirt.shirtColor + ".png");		
+		$(".tshirt", targetEl).attr("src", "t-" + shirt.shirtColor + ".png");
 		$(".design-a", targetEl).text(shirt.symbol);
 		$(".design-a", targetEl).css("color", '#' + shirt.symbolColor);
 		$(".design-b", targetEl).text(shirt.phrase);
